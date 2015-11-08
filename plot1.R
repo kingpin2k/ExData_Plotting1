@@ -2,9 +2,9 @@
 
 getPower<-function(){
   # power.csv was build using this
-  # power<-read.delim("power.txt", sep=";", na="?")
+  # power<-read.delim("household_power_consumption.txt", sep=";", na="?")
   # q<-power$Date=="1/2/2007" | power$Date=="2/2/2007"
-  # power<-power[q]
+  # power<-power[q,]
   # write.csv(power, file="power.csv")
   power<-read.csv("power.csv")
   power$DT <- paste(power$Date, power$Time)
